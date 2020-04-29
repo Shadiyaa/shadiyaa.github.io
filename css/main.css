@@ -1,3 +1,30 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    /* overflow: hidden; */
+}
+
+.wrapper {
+    max-width: 2560px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Arial', sans-serif; */
+
+/* NAwIGACJA */
+
 .navigation {
     position: absolute;
     top: 0;
@@ -54,6 +81,8 @@
     display: none;
 }
 
+/* HEADER */
+
 header {
     color: #fff;
 }
@@ -106,7 +135,7 @@ header p {
     z-index: -10;
 }
 
-.btn-nav {
+.btn-header {
     margin-top: 70px;
     margin-left: 10px;
     padding: 10px 20px;
@@ -117,7 +146,7 @@ header p {
     text-align: center;
 }
 
-.btn-nav a {
+.btn-header a {
     color: #fff;
     text-decoration: none;
 }
@@ -184,26 +213,42 @@ header p {
 
 @media (max-width: 375px) {
     header h1 {
-        font-size: 250%;
-        margin-top: 100%;
+        width: 85%;
         padding: 0;
+        line-height: 1.4;
+        margin-top: -40%;
     }
-
+    
+    header p {
+        width: 85%;
+        margin-top: 10px;
+        line-height: 1.4;
+        font-size: 20px;
+    }
+    
+    .btn-header {
+        margin-top: 40px;
+    }
+    
+    .tiles {
+        margin-top: 30%;
+    }
+    
     .tile {
-        width: 95vw;
-        height: 75vh;
+        width: 70vw;
+        height: 50vh;
     }
-}
-
-@media (min-width: 768px) {
-    .header-img {
-        height: 80vh;
-    }
-
     header h1 {
         font-size: 300%;
         margin-top: -40%;
     }
+}
+
+@media (max-width: 768px){
+    header h1 {
+        font-size: 300%;
+        margin-top: -40%;
+    }    
 }
 
 @media (max-width: 991px) {
@@ -281,12 +326,6 @@ header p {
         padding: 1vw;
         justify-items: center;
     }
-
-    /* .navigation-menu-item:focus {
-        background-color: rgb(202, 190, 190);
-        border-bottom: unset;
-        color: rgb(32, 43, 48);
-    } */
 
     .navigation-link {
         font-size: 25px;
