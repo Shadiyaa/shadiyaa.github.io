@@ -4,6 +4,11 @@ header {
     height: 230vh;
 }
 
+.header-text {
+    width: 80%;
+    margin-top: -70px;
+}
+
 header h1 {
     line-height: 1.3;
 }
@@ -32,11 +37,19 @@ header h1 {
     margin: 0 auto;
     width: 70%;
 }
+
 .services-description {
     width: 100%;
     margin-top: 30px;
 }
+
 .services-tile {
     width: 50%;
     height: 40vh;
+}
+
+/* GALERIA */
+
+.gallery-list {
+    grid-template-columns: repeat(2, 1fr);
 }
